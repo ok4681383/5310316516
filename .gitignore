@@ -1,25 +1,22 @@
-# CakePHP 3
-
-/vendor/*
-/config/app.php
-
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
-
-/logs/*
-!/logs/empty
-
-# CakePHP 2
-
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+<!DOCTYPE html>
+<html lang="tw">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+        function oAuth2() {
+            var URL = 'https://notify-bot.line.me/oauth/authorize?';
+            URL += 'response_type=code';
+            URL += '&client_id=[ffairIdcr9XqdNfT2UCRqd]';
+            URL += '&redirect_uri=[https://ok4681383.herokuapp.com/callback]';
+            URL += '&scope=notify';
+            URL += '&state=NO_STATE';
+            window.location.href = URL;
+        }
+    </script>
+    </head>
+    <body>
+        <button onclick="oAuth2();"> 連結到 LineNotify 按鈕 </button>
+    </body>
+</html>
